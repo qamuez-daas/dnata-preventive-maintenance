@@ -1,0 +1,35 @@
+:root { --primary:#0078d4; --primary-dark:#005a9e; --sky:#00a9e0; --bg:#fff; --text:#111; --muted:#6e6e6e; --surface:#f5f7fb; --radius:12px; }
+*{box-sizing:border-box} html,body{height:100%}
+body{margin:0;font-family:system-ui,-apple-system,'Segoe UI',Tahoma,Arial,sans-serif;background:var(--bg);color:var(--text);display:flex;flex-direction:column}
+.center{text-align:center}
+.app-header{display:grid;justify-items:center;gap:6px;padding:16px;background:var(--surface);border-bottom:1px solid #e5e8ef}
+.brand-wrap{display:grid;justify-items:center}
+.dnata{font-weight:900;font-size:88px;color:var(--sky);line-height:1}
+.program{font-weight:700;font-size:22px;color:#4a4a4a}
+.actions{display:flex;align-items:center;gap:10px}
+.lang-toggle{cursor:pointer;padding:6px 10px;border:1px solid #d2d6e0;border-radius:999px;font-size:14px}
+.app-content{flex:1;padding:20px;max-width:980px;margin:0 auto;width:100%}
+.section{display:none} .section.active{display:block}
+.buttons{display:grid;grid-template-columns:1fr;gap:14px}
+button{border:none;border-radius:var(--radius);padding:14px 16px;font-size:16px;cursor:pointer}
+button.primary{background:var(--primary);color:#fff} button.primary:hover{background:var(--primary-dark)}
+button.secondary{background:#e9f2fb;color:var(--primary)} button.ghost{background:transparent;color:var(--primary);border:1px solid #d2d6e0}
+.hint{color:var(--muted);margin-top:8px}
+.form{display:grid;gap:10px;max-width:520px}
+input[type=text], input[type=date], select, textarea{padding:12px;border:1px solid #d2d6e0;border-radius:var(--radius);font-size:16px}
+.form-actions{display:flex;gap:10px;margin-top:6px;justify-content:flex-start}
+.result{margin-top:8px}
+.scan-ui{display:grid;gap:12px}
+.camera-bar{display:flex;gap:8px;align-items:center}
+#video{width:100%;max-height:420px;background:#000;border-radius:var(--radius)}
+.msg{color:var(--muted)}
+.checklist{margin-top:16px;display:grid;gap:8px}
+.checklist .group{border:1px solid #e5e8ef;border-radius:12px;padding:10px;background:#fff}
+.checklist .group h4{margin:0 0 8px}
+.checklist .item{display:grid;grid-template-columns:2fr 1fr 2fr auto;gap:8px;align-items:flex-start}
+.checklist .item textarea{min-height:120px}
+.actions-bar{margin-top:16px;display:flex;gap:10px}
+.meta{margin-top:16px;display:grid;grid-template-columns:repeat(2, minmax(280px, 1fr));gap:8px}
+.meta .field{display:grid;gap:6px}
+.attach-photo{background:#fff;color:#0078d4;border:1px solid #d2d6e0;border-radius:8px;padding:10px;}
+.ltr{direction:ltr}
